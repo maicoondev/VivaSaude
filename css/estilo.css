@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+
+/*
+font-family: 'Pacifico', cursive; //titulo
+font-family: 'Righteous', cursive; //conteudo
+*/
+
+.centro{
+    width: 1200px;
+}
+h2,h3,h4{
+    font-family: 'Pacifico', cursive;
+}
+p{
+    font-family: 'Righteous', cursive;
+}
+header{
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+    background: white;
+}
+
+/*TOPO*/
+.topo{
+    background: #0000c4;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+   }
+.topo .centro{
+    display: flex;
+    justify-content: space-between;
+}   
+.topo .centro div{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto 0;
+}
+.topo .centro div p{
+    margin: 0 15px;
+    font-size: 20px;
+}
+.topo .centro nav a img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+/*MENU*/
+.abrirMenu, .fecharMenu{
+    display: none;
+}
+
+.menu{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+}
+.menu .centro{
+    display: flex;
+    justify-content: space-between;
+}
+.menu .centro h1{
+    width: 300px;
+    height: 70px;
+    background: url(../img/logovivasaudehorizontal.png) no-repeat;
+    background-size: 100% 100%;
+    text-indent: -9999px;
+    margin: 25px 0;
+}
+.menu .centro nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.menu .centro nav ul a{
+    text-decoration: none;
+    color: #0000c4;
+    margin: 0 10px;
+}
+.menu .centro nav ul a li{
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    background: #00ff48;
+    padding: 20px 10px;
+    border-radius: 15px;
+    text-transform: uppercase;
+
+}
+.menu .centro nav ul a li:hover{
+    background: #00cc48;
+}
+
+
+/*BANNER*/
+.banner img{
+    width: 100%;
+    max-height: 720px;
+}
+
+/*SOBRE*/
+#sobre{
+    height: 180px;
+    margin-top: -180px;
+}
+
+.sobre{
+    width: 100%;
+    height: 630px;
+    display: flex;
+    justify-content: center;
+}
+.sobre .centro{
+    margin: 50px 0;/*SUP/INF + ESQ/DIR*/
+}
+.sobre .centro h2{
+    width: 600px;
+    text-align: center;
+    font-size: 35px;
+    color: #0000c4;
+    text-decoration: #0000c4 underline;
+}
+.sobre .centro div{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 10px 0; /*SUP DIR INF ESQ*/
+}
+.sobre .centro div p{
+    width: 540px;
+    height: 400px;
+    border: #00cc48 solid 5px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    padding: 20px;
+    border-radius: 15px 0 0 15px; /*SUP/ESQ SUP/DIR INF/DIR INF/ESQ*/
+}
+.sobre .centro div img{
+    width: 580px;
+    height: 440px;
+    border: #00cc48 solid 5px;
+    border-radius: 0 15px 15px 0;
+}
+
+/*GALERIA*/
+.galeria{
+    width: 100%;
+    background: #00cc48;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0 ;
+    flex-wrap: wrap; /*Quebra as imagens para a próxima linha*/
+}
+.galeria img{
+    width: 240px;
+    height: 240px;
+    margin: 25px 40px;
+
+}
+/*ESPECIALIDADES*/
+#especialidades{
+    height: 180px;
+    margin-top: -180px;
+}
+
+.especialidades{
+    width: 100%;
+    background: #0000c4;
+    display: flex;
+    justify-content: center;
+}
+
+.especialidades .centro{
+    margin: 50px 0;
+}
+
+.especialidades .centro h2{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    border-bottom: white solid 2px;
+    height: 50px;
+}
+
+.especialidades .centro .conteudoEspecialidades{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.especialidades .centro .conteudoEspecialidades div{
+    width: 250px;
+    height: 370px;
+    background: white;
+    padding: 15px;
+}
+
+.especialidades .centro .conteudoEspecialidades div img{
+    width: 250px;
+    height: 185px;
+
+}
+
+.especialidades .centro .conteudoEspecialidades div p{
+    width: 250px;
+    height: 185px;
+    text-align: justify;
+    font-size: 18px;
+    color: #0000c4;
+    overflow: hidden; /*Corta o texto excedente*/
+}
+
+/*Equipe*/
+#equipe{
+    height: 180px;
+    margin-top: -180spx;
+}
+
+.equipe{
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+.equipe .centro{
+    margin: 50px 0;
+}
+
+.equipe .centro h2{
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    color: #0000c4;
+    border-bottom: #0000c4 solid 2px;
+    height: 50px;
+}
+
+.equipe .centro .conteudoEquipe{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.equipe .centro .conteudoEquipe .profissional{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.equipe .centro .conteudoEquipe .profissional img{
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 50%;
+}
+.equipe .centro .conteudoEquipe .profissional div{
+    margin: auto 50px;
+}
+
+.equipe .centro .conteudoEquipe .profissional div h3{
+    font-size: 35px;
+    line-height: 50px;
+    color:#0000c4 ;
+}
+.equipe .centro .conteudoEquipe .profissional div h4{
+    font-size: 30px;
+    line-height: 50px;
+    color:#00ff48 ;
+}
+
+/*DESTAQUE*/
+#contato{
+    height: 180px;
+    margin-top: -180px;
+}
+
+.destaque{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #00ff48;
+}
+.destaque .centro{
+    height: 340px;
+    margin: 50px 0;
+    background: url(../Img/destaque.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical*/
+}
+.destaque .centro img{
+    width: 80px;
+    height: 80px;
+}
+.destaque .centro img:hover{
+    width: 180px;
+    height: 180px;
+    background: #00cc4850; /*"50 na frente da cor" para imagens transparentes*/
+    border-radius: 50%;
+}
+
+/*INFO*/
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #0000c4;
+}
+.info .centro{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.info .centro .info1,
+.info .centro .info2,
+.info .centro .info3{
+    width: 350px;
+    height: 360px;
+    background: white;
+    color: #0000c4;
+    border-radius:  25px;
+    text-align: center;
+}
+.info .centro .info1 img{
+    width: 180px;
+    height: 120px;
+    margin: 20px;
+}
+.info .centro .info1 p{
+    line-height: 50px;
+    font-size: 20px;
+}
+.info .centro .info2 img{
+    width: 300px;
+    height: 90px;
+    margin: 20px 0 0 0;
+}
+.info .centro .info2 div{
+    width: 100%-40px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: "space-between";
+}
+.info .centro .info2 div img{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+}
+.info .centro .info2 p{
+    line-height: 50px;
+    font-size: 20px;
+}
+.info .centro .info3 img{
+    width: 180px;
+    height: 120px;
+    margin: 20px;
+}
+.info .centro .info3 iframe{
+    width: 300px;
+    height: 180px;
+    border-radius: 25px;
+}
+
+/*DIREITOS*/
+.direitos{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00cc48;
+    color: #0000c4;
+    letter-spacing:  3px;
+    font-size: 15px;
+}
+
+/*DESENVOLVEDOR*/
+.desenvolvedor{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0000c4;
+    color: #00cc48;
+    letter-spacing:  3px;
+    font-size: 15px;
+}
+
+/***************************************************************************/
+/*******************************RESPONSIVO**********************************/
+/***************************************************************************/
+
+@media (max-width: 1024px){
+    /*SOBRE*/
+    .sobre{
+        height: auto;
+    }
+    .sobre .centro h2{
+        margin: auto;
+    }
+    .sobre .centro div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre .centro div p{
+        border-radius: 15px 15px 0 0;
+    }
+    .sobre .centro div p{
+        border-radius: 0 0 15px 15px;
+    }
+
+    /*ESPECIALIDADES*/
+    .especialidades .centro .conteudoEspecialidades{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    /*INFO*/
+    .info .centro .info1,
+    .info .centro .info2,
+    .info .centro .info3{
+        width: 30%;
+    }    
+}
+
+@media (max-width: 820px){
+    /*MENU*/        
+    .menu .centro h1{
+        display: none;
+    }
+    .menu .centro nav{
+        width: 100%;
+    }
+
+    /*INFO*/
+    .info .centro{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    .info .centro .info1,
+    .info .centro .info2,
+    .info .centro .info3{
+        width: 45%;
+    }  
+}
+
+@media (max-width: 420px){
+    .topo .centro div{
+        display: none;
+    }
+    .topo .centro nav{
+        width: 100%; 
+        display: flex;   
+        justify-content: center;
+    }
+    /*MENU*/
+    .abrirMenu, .fecharMenu{
+        display: block;
+    }
+    .abrirMenu{
+        background: url(../Img/abrirMenu.png) no-repeat;
+        background-size: 50px 50px;
+        padding: 25px;
+        border: 0;
+        margin: auto 5px;
+    }
+    .fecharMenu{
+        background: url(../Img/fecharMenu.png) no-repeat;
+        background-size: 50px 50px;
+        padding: 25px;
+        border: 0;
+        margin: auto 5px;
+    }
+    .menu .centro h1{
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
+    .menu .centro nav{
+        position: fixed;
+        height: 100%;
+        background: #00ff48;
+        z-index: 9999; /*Para ficar acima de todos os objetos*/
+        width: 50%;
+        max-width: 250px;
+        right: 0;
+        right: -250px;
+        transition: right .5s ease-out;
+        top: 0;
+    }
+    .menuAtivo .menu .centro nav{
+        right: 0;
+    }
+    .menu .centro nav ul a{
+        color: white;
+    }
+    .menu .centro nav ul a li{
+        font-size: 15px;
+        margin: 5px 0;
+        background: #0000c4;
+    }
+    .menu .centro nav ul{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    /*BANNER*/
+    .banner{
+        display: none;
+    }
+    /*SOBRE*/
+    .sobre .centro div p{
+        width: 100%;
+    }
+    .sobre .centro div img{
+        width: 100%;
+    }
+    .sobre .centro h2{
+        width: 100%;
+    }
+    .sobre .centro div p{
+        width: 260px; /*padding de 20px + border de 5px*/
+    }
+    .sobre .centro div img{
+        width: 300px; /*border de 5px**/
+    }
+
+    /*EQUIPE*/
+    .equipe .centro .conteudoEquipe{
+        justify-content: center;
+    }
+    .equipe .centro .conteudoEquipe .profissional{
+        width: 90%;
+    }
+    .equipe .centro .conteudoEquipe .profissional img{
+        width: 150px;
+        height: 150px;
+    }
+    .equipe .centro .conteudoEquipe .profissional div{
+        margin:  auto 20px;
+    }
+    .equipe .centro .conteudoEquipe .profissional div h3{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .equipe .centro .conteudoEquipe .profissional div h4{
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    /*DESTAQUE*/
+    .destaque .centro{
+        height: 200px;
+    }
+    .destaque .centro img{
+        width: 50px;
+        height: 50px;
+    }
+    .destaque .centro img:hover{
+        width: 70px;
+        height: 70px;
+    }
+    .info .centro .info1,
+    .info .centro .info2,
+    .info .centro .info3{
+        width: 90%;
+        height: 250px;
+    }
+    .info .centro .info1 img{
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+    }
+    .info .centro .info1 p{
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .info .centro .info2 img{
+        width: 200px;
+        height: 60px;
+        margin: 10px 0 0 0;
+    }
+    .info .centro .info2 div{
+        margin: 10px 50px;
+    }
+    .info .centro .info2 div img{
+        width: 60px;
+        height: 60px;
+    }
+    .info .centro .info2 p{
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .info .centro .info3 img{
+        display: none;
+    }
+    .info .centro .info3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info .centro .info3 iframe{
+        width: 80%;
+        height: 80%;
+    }
+
+    /*DIREITOS*/
+    .direitos{
+        font-size: 10px;
+    }
+    .direitos p{
+        margin: auto 20px;
+    }
+
+    /*DESENVOLVEDOR*/
+    .desenvolvedor{
+        font-size: 10px;
+    }
+    .desenvolvedor p{
+        margin: auto 15px;
+    }
+}
