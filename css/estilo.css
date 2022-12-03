@@ -277,7 +277,7 @@ header{
 }
 
 /*DESTAQUE*/
-#contato{
+.contato{
     height: 180px;
     margin-top: -180px;
 }
@@ -291,7 +291,7 @@ header{
 .destaque .centro{
     height: 340px;
     margin: 50px 0;
-    background: url(../Img/destaque.png) no-repeat;
+    background: url(../img/destaque.png) no-repeat;
     background-size: 100% 100%;
     border-radius: 25px;
     display: flex;
